@@ -1,0 +1,33 @@
+<!-- word_details_template.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Details</title>
+    <link rel="stylesheet" href="word_details_styles.css"> <!-- CSS dosyasını çağırma -->
+</head>
+<body>
+    <div class="container">
+        <div class="word-details">
+            <h1>${word}</h1>
+            <div class="details">
+                <p><strong>Part of Speech:</strong> ${wordData.partOfSpeech}</p>
+                <p><strong>Phonetic:</strong> /${wordData.phonetic}/</p>
+            </div>
+            <div class="meaning">
+                <h2>Meaning:</h2>
+                <p>${wordData.definition}</p>
+            </div>
+            <div class="example">
+                <h2>Example:</h2>
+                <p>${wordData.example || "No example available."}</p>
+            </div>
+        </div>
+    </div>
+    <div class="lorem-ipsum">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec ligula vel justo faucibus ultrices. Vivamus nec mi a lectus molestie feugiat. Sed sollicitudin placerat est, ac fringilla velit interdum nec. Donec fermentum mi id lectus pellentesque, at ultrices nulla vestibulum. Sed sit amet neque eu ex ultrices vestibulum. Duis et maximus magna. Duis pharetra, risus vel ultricies feugiat, felis lorem vulputate orci, in tincidunt odio libero nec eros. Suspendisse potenti. Nam mattis justo vitae sapien tempus sollicitudin. Mauris sit amet nunc eget est hendrerit elementum. Nullam sed lectus vitae justo volutpat iaculis nec in velit. Vivamus non vestibulum ligula. Nam interdum lacus quis orci hendrerit, id dapibus mi rutrum. Fusce ut orci in quam dapibus varius.</p>
+    </div>
+</body>
+</html>
